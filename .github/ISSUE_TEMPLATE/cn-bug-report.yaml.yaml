@@ -1,0 +1,21 @@
+name: 问题反馈
+description: 反馈BUG
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你抽出时间填写此错误报告！
+  - type: textarea
+    id: what-happened
+    attributes:
+      label:  发生了什么？
+      description: 另外，请告诉我们，你原本预期会发生什么？
+      placeholder: 告诉我们你看到了什么！
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤
+      description: 请详细描述导致上述问题的具体操作步骤。

@@ -1,0 +1,28 @@
+name: 新功能请求
+description: 需要一个新功能
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你抽出时间填写此报告！
+  - type: textarea
+    id: what-needed
+    attributes:
+      label: 请详细描述你的需求
+      description: 例如某些请求接口缺失，这通常由版本更新导致，或者添加某些必要的新功能
+      placeholder: 请详细描述你的需求
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 紧急程度有多高？
+      multiple: false
+      options:
+        - 低
+        - 中
+        - 高
+      default: 0
+    validations:
+      required: true
